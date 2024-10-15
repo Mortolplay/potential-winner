@@ -24,7 +24,7 @@ class WordsFinder:
         for name, words in self.get_all_words().items():
             for i in words:
                 if word.lower() == i:
-                    m[self.file_name] = words.index(i)
+                    m[self.file_name] = words.index(i) + 1
         return m
     def count(self, word):
         c = {}
